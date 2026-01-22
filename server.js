@@ -31,6 +31,7 @@ app.get('/reg',(req,res)=>{
 
 
 app.use('/tasks',require('./routes/taskroutes'));
+app.use('/auth',require('./routes/AuthRoutes'));
 
 app.listen(port,()=>{
     console.log(`Server is running on http://localhost:${port}`);
